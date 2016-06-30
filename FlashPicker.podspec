@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.summary     = "iOS 10 Messages app like quick image picker."
 
   s.description = <<-DESC
+                   iOS 10 Messages app like quick image picker.
                    You can pick image quickly by FlashPicker.
                    DESC
 
@@ -19,6 +20,7 @@ Pod::Spec.new do |s|
 
   s.source          = { :git => "https://github.com/xspyhack/FlashPicker.git", :tag => s.version }
   s.source_files    = "FlashPicker/*.swift"
+  s.resource        = 'FlashPicker/Assets.xcassets'
   s.requires_arc    = true
 
 end

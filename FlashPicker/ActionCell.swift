@@ -46,13 +46,9 @@ class ActionCell: UICollectionViewCell {
         
         let imageViewX = NSLayoutConstraint(item: imageView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1.0, constant: 0.0)
         let imageViewY = NSLayoutConstraint(item: imageView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1.0, constant: 0.0)
-//        let imageViewWidth = NSLayoutConstraint.constraintsWithVisualFormat("H:[imageView(==40)]", options: [], metrics: nil, views: ["imageView": imageView])
-//        let imageViewHeight = NSLayoutConstraint.constraintsWithVisualFormat("V:[imageView(==40)]", options: [], metrics: nil, views: ["imageView": imageView])
         
         NSLayoutConstraint.activateConstraints([titleLabelHeight, titleLabelY, imageViewX, imageViewY])
         NSLayoutConstraint.activateConstraints(titleLabelH)
-//        NSLayoutConstraint.activateConstraints(imageViewWidth)
-//        NSLayoutConstraint.activateConstraints(imageViewHeight)
     }
 
 }
