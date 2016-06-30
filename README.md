@@ -7,8 +7,7 @@
 
 iOS 10 Messages app like quick image picker.
 
-![Screenshot](https://raw.githubusercontent.com/xspyhack/FlashPicker/master/images/screenshot.png)
-
+![Screenshot](https://github.com/xspyhack/FlashPicker/tree/master/imagesscreenshot.png)
 
 ## Requirements
 
