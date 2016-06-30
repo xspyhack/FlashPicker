@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source          = { :git => "https://github.com/xspyhack/FlashPicker.git", :tag => s.version }
   s.source_files    = "FlashPicker/*.swift"
-  s.resource        = 'FlashPicker/Assets.xcassets'
+  s.resources        = 'FlashPicker/Assets.xcassets'
   s.requires_arc    = true
 
 end
