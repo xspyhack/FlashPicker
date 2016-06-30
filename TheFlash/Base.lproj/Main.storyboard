@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheFlash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9m-kb-GzU" customClass="FlashPicker" customModule="FlashPicker">
+                                <rect key="frame" x="0.0" y="600" width="600" height="253"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="HsD-YG-chK"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dUa-Eh-FET">
+                                <rect key="frame" x="117" y="44" width="366" height="488"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Akz-ih-POh"/>
+                                    <constraint firstAttribute="height" constant="267" id="Jo1-lQ-n3i"/>
+                                    <constraint firstAttribute="width" secondItem="dUa-Eh-FET" secondAttribute="height" multiplier="3:4" id="UjC-xC-6Dc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Akz-ih-POh"/>
+                                        <exclude reference="Jo1-lQ-n3i"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHs-SI-5Vf" userLabel="Bottom Bar">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdz-bD-fmR">
+                                        <rect key="frame" x="12" y="3" width="44" height="38"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" image="icon_camera"/>
+                                        <connections>
+                                            <action selector="pickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPS-2p-eRB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IT3-Ph-iho"/>
+                                    <constraint firstItem="Xdz-bD-fmR" firstAttribute="centerY" secondItem="gHs-SI-5Vf" secondAttribute="centerY" id="MZ4-LX-2yJ"/>
+                                    <constraint firstItem="Xdz-bD-fmR" firstAttribute="leading" secondItem="gHs-SI-5Vf" secondAttribute="leading" constant="12" id="P6q-dl-Pg9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p9m-kb-GzU" firstAttribute="top" secondItem="gHs-SI-5Vf" secondAttribute="bottom" id="5hc-tm-bWV"/>
+                            <constraint firstAttribute="trailing" secondItem="p9m-kb-GzU" secondAttribute="trailing" id="FKl-i7-khj"/>
+                            <constraint firstItem="dUa-Eh-FET" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ky2-SN-CAd"/>
+                            <constraint firstItem="p9m-kb-GzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lil-ov-cas"/>
+                            <constraint firstItem="gHs-SI-5Vf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TXq-rj-8r9"/>
+                            <constraint firstItem="dUa-Eh-FET" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Tld-UB-AxB"/>
+                            <constraint firstItem="dUa-Eh-FET" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="d2E-0G-VHS"/>
+                            <constraint firstItem="dUa-Eh-FET" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="maq-Nr-VOP"/>
+                            <constraint firstAttribute="trailing" secondItem="gHs-SI-5Vf" secondAttribute="trailing" id="sab-Wg-VAp"/>
+                            <constraint firstAttribute="bottom" secondItem="gHs-SI-5Vf" secondAttribute="bottom" id="wT7-3Z-slI"/>
+                            <constraint firstItem="p9m-kb-GzU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yGF-c9-hdt"/>
+                            <constraint firstItem="gHs-SI-5Vf" firstAttribute="top" secondItem="dUa-Eh-FET" secondAttribute="bottom" constant="24" id="zQh-pp-g5t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="d2E-0G-VHS"/>
+                                <exclude reference="maq-Nr-VOP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="barBottomConstraint" destination="wT7-3Z-slI" id="WzX-Wr-qUF"/>
+                        <outlet property="flashPicker" destination="p9m-kb-GzU" id="27W-6E-xjq"/>
+                        <outlet property="imageView" destination="dUa-Eh-FET" id="zBT-hf-DYq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_camera" width="28" height="22"/>
+    </resources>
+</document>
