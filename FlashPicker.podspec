@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "FlashPicker"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.summary     = "iOS 10 Messages app like quick image picker."
 
   s.description = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source          = { :git => "https://github.com/xspyhack/FlashPicker.git", :tag => s.version }
   s.source_files    = "FlashPicker/*.swift"
-  s.resources        = 'FlashPicker/Assets.xcassets'
+  s.resources       = 'FlashPicker/Assets.xcassets'
   s.requires_arc    = true
 
 end
